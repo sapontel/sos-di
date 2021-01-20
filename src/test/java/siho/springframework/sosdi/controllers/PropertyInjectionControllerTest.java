@@ -2,7 +2,7 @@ package siho.springframework.sosdi.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import siho.springframework.sosdi.services.GreetingServiceImpl;
+import siho.springframework.sosdi.services.ConstructorGreetingService;
 
 class PropertyInjectionControllerTest {
 
@@ -12,7 +12,7 @@ class PropertyInjectionControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingService();
     }
 
     @Test

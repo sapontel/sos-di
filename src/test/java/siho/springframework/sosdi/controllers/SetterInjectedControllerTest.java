@@ -2,9 +2,7 @@ package siho.springframework.sosdi.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import siho.springframework.sosdi.services.GreetingServiceImpl;
-
-import static org.junit.jupiter.api.Assertions.*;
+import siho.springframework.sosdi.services.ConstructorGreetingService;
 
 class SetterInjectedControllerTest {
 
@@ -13,7 +11,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new ConstructorGreetingService());
     }
 
     @Test

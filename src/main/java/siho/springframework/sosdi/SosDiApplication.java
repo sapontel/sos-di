@@ -33,7 +33,7 @@ public class SosDiApplication {
 		System.out.println("__________________Constructor");
 
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
-		System.out.println(propertyInjectedController.getGreeting());
+		System.out.println(constructorInjectedController.getGreeting());
 	}
 
 }
